@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!--
+    CameraPreviewNormal attributes
+        camType: back or front
+        width: preview width
+        height: preview height
+        scaleType: center centerCrop fit 
+    -->
+
+<!--     <me.wjchen.uvc.CameraPreviewNormal
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        camType="back"
+        width="1280"
+        height="960"
+        scaleType="fit" />
+ -->
+  <me.wjchen.uvc.CameraPreviewV4L
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        camType="front"
+        camId="0"
+        width="1280"
+        height="960"
+        scaleType="center" /> 
+
+<!--    <me.wjchen.uvc.CameraPreviewUVC
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        camId="0"
+        width="1280"
+        height="960"
+        scaleType="fit" /> -->
+</RelativeLayout>
